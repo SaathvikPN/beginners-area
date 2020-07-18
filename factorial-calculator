@@ -1,17 +1,17 @@
-// program to calculate a factorial
+// C program to calculate the factorial of number
 #include<stdio.h>
 #include<stdlib.h>
 int factorial (int i);
 int main(void)
 {
     int n;
-    printf("Which number's factorial? \nAnswer:  ");
+    printf("Enter number into Factorial Calculator :  ");
     scanf("%d",&n);
-    if (n<0)
+    while (n<0)
     {
-        printf("Negative number Error. Factorials exist only for Positive Numbers\n");
-        exit(0);
-    }
+        printf("Negative number Error. Factorials exist only for Positive Numbers\nPlease enter Non-negative number\n");
+        scanf("%d",&n);
+    };
     printf("%d", factorial(n));
 }
 
