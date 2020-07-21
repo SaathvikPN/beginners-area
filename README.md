@@ -1,7 +1,7 @@
 # The Beginners Area
 This Repository consists of some simple and small programs that a beginner in programming would deal with 🎈
 
-> Key Notes:
+> Make Use of these Key Notes:
 
 - **[Markdown Guide](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)**
 
