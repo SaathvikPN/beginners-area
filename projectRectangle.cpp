@@ -67,11 +67,6 @@ int main()
     {
         select = DoMenu();
 
-        while(select<DrawRect || select>Quit)
-        {
-            cout<<"\nInvalid choice.\nPlease select again.\n";
-        }
-
         switch(select)
         {
         case DrawRect :
@@ -97,7 +92,7 @@ int main()
             cout<<"Exiting...\n";
             break;
         default:
-            cout<<"Error in choice. Try Again.\n";
+            cout<<"Invalid choice. Select again\n";
             // break; Not needed. No fall through below this.
         } //End of Switch
     }// End of while checking if user choose quit
@@ -107,12 +102,13 @@ int main()
 USHORT DoMenu()
 {
     USHORT select;
-    cout<<"\n\n*** Menu *** \n\n";
+    cout<<"\n\n*** Menu *** \n";
     cout<<"1. Draw Rectangle\n";
     cout<<"2. Compute Area\n";
     cout<<"3. Compute Perimeter\n";
     cout<<"4. Resize the Rectangle\n";
     cout<<"5. Quit\n";
+    cout<<"\nSelect choice Number: ";
     cin>>select;
     return select;
 }
@@ -143,4 +139,4 @@ void DoGetPerimeter(Rectangle rectA)
     cout<<"Perimeter = "<<rectA.GetPerimeter()<<endl;
 }
 
-// End of the project Rectangle
+// End of the whole project
