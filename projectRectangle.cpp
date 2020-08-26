@@ -7,7 +7,7 @@ typedef unsigned long int ULONG;
 enum BOOL {FALSE, TRUE};
 enum CHOICE {DrawRect = 1, GetArea, GetPerimeter, ChangeDimension, Quit};
 
-// Let's declare Rectangle Class
+// Declare Rectangle Class
 class Rectangle
 {
 public:
@@ -31,14 +31,14 @@ private:
 };
 
 // Class Functions Definitions
-//1. Constructor hence no return type specified
+//#1 Constructor hence no return type specified
 Rectangle :: Rectangle(USHORT width, USHORT height)
 {
     itsWidth = width;
     itsHeight = height;
 }
 
-//2. SetSize
+//#2 SetSize
 void Rectangle :: SetSize(USHORT newWidth, USHORT newHeight)
 {
     itsHeight = newHeight;
@@ -46,8 +46,8 @@ void Rectangle :: SetSize(USHORT newWidth, USHORT newHeight)
 }
 
 // **************End of Class Blueprint ********************
-// Main Driver Function starts here
 
+// Main Driver Function starts here...
 //Function declarations
 USHORT DoMenu();
 void DoDrawRect(Rectangle);  //Rectangle class is new data type defined
